@@ -24,7 +24,6 @@ public class ClienteHandler extends Thread {
             new InputStreamReader(cliente.getInputStream()));
         this.out=new PrintWriter(
             cliente.getOutputStream(), true);
-        out.println("prueba");
     }
 
     @Override
@@ -69,7 +68,6 @@ public class ClienteHandler extends Thread {
             puntos++;
             enviarMensaje("Respuesta correcta");
         }else if (!respuestaActual.equalsIgnoreCase(sol)) {
-            puntos-=0.3;
             enviarMensaje("Error. La respuesta correcta es: "+sol);
         }else{
             enviarMensaje("Contesta cabron!!!!");

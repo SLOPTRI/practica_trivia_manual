@@ -15,7 +15,7 @@ public class ReceptorMensajes extends Thread {
         try {
             String message;
             while ((message=in.readLine())!=null){
-                System.out.println(in.readLine());
+                System.out.println(message);
             }
             System.out.println("Servidor finalizado");
         }catch (IOException e){

@@ -11,8 +11,11 @@ public class GameManager {
 
     public GameManager(ArrayList<ClienteHandler> clientes) {
         this.clientes = clientes;
-        this.preguntas.add(new Pregunta("Enunciado1", "1", "2", "3", "4", "b"));
-        this.preguntas.add(new Pregunta("Enunciado2", "1", "2", "3", "4", "c"));
+        this.preguntas.add(new Pregunta("Que hace Oscar cuando se aburre ?", "Llama a Jaime", "Manda solicitudes por Linkedin masivamente", "Contacta con recruiters", "Hace un ejercicio totalmente innecesario", "b"));
+        this.preguntas.add(new Pregunta("Que hace Oscar cuando no se aburre ?", "Llama a Jaime", "Manda solicitudes por Linkedin masivamente", "Contacta con recruiters", "Hace un ejercicio totalmente innecesario", "d"));
+        this.preguntas.add(new Pregunta("Que hace Jaime cuando se aburre ?", "Llama a Oscar", "Manda solicitudes por Linkedin masivamente", "Contacta con recruiters", "Hace un ejercicio totalmente innecesario", "c"));
+        this.preguntas.add(new Pregunta("Que hace Jaime cuando se aburre ?", "Llama a Oscar", "Manda solicitudes por Linkedin masivamente", "Contacta con recruiters", "Hace un ejercicio totalmente innecesario", "a"));
+        this.preguntas.add(new Pregunta("Que hace Adrian cuando se aburre ?", "Llama a Javi", "Fuma Vaper", "Compra Vapers", "Duerme", "b"));
     }
 
     public void iniciarPartida(){
